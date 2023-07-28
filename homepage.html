@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Name</title>
+         <link rel="stylesheet" href="style.css"> 
+        <!-- fav icon error in type -->
+        <link rel="icon" type="image/x-icon" href="fav-icon.png">
+<!-- importing poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--importing monoton font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- uisng font awesome -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+
+     
+</head>
+    <body>
+
+<!-- scroll progress bar -->
+<div id="progress">
+    <span id="progress-value"></span>
+</div>
+
+
+
+<!-- navigation -->
+        <nav class="navigation">
+<!-- menu-btn -->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+<!-- logo for site -->
+<a href="index.html" class="logo">Movies<span>.hd</span></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+            <!-- search box -->
+        <form action="" class="search-box">
+            <!-- input -->
+            <input type="text" name="search" placeholder="search movie" class="search-input" required>
+            <!-- btn -->
+            <button type="submit">
+                <i class="fas fa-search"></i>
+               
+            </button>
+        </form>
+        </nav>
+        <!-- nav end -->
+
+<!-- movie banner -->
+<div class="movie-banner">
+
+    <!-- img -->
+    <div class="m-banner-img">
+        <img src="cover.jpg" alt="">
+
+    </div>
+
+    <!-- content -->
+    <div class="title-container">
+        <!-- title top -->
+        <div class="title-top">
+    <!-- title -->
+        <div class="movie-title">
+            <h1>Pirates of the Caribbean Salazar's Revenge</h1>
+        </div>
+        <!-- more about movie -->
+        <div class="more-about-movie">
+            <span class="quality">Full HD</span>
+            <div class="rating">
+                8.2 <img src="IMDb-icon.png" alt="imdb">
+            </div>
+            <span>15 Jan 2023</span>
+            <span>125min</span>
+        </div>
+        <!-- language -->
+        <div class="language"><span>English</span></div>
+    </div>
+
+    <!-- title-bottom -->
+    <div class="title-bottom">
+<!-- category -->
+        <div class="category">
+            <strong>Category</strong><br/>
+            <a href="#">Horror</a>,<a href="#">Mistery</a>,<a href="#">Thriller</a>
+        </div>
+        <!-- trailer-btn link from youtube -->
+        <a href="#" class="watch-btn">Watch Trailer</a>
+    </div>
+    </div>
+    <!-- play-btn -->
+    <div class="play-btn-container">
+        <div class="play-btn">
+            <a href="javascript:void">
+                <i class="fas fa-play"></i>
+            </a>
+        </div>
+    </div>
+    <!-- video/full-movie- -->
+    <div  id="play" class="play">
+        <!-- close -btn-->
+        <a href="javascript:void" class="close-movie">
+            <i class="fas fa-times"></i>
+        </a>
+
+        <!-- movie -->
+        <div class="play-movie">
+            <video id="m-video" controls>
+                <source src="Movie.mp4" type="video/mp4">
+            </video>
+        </div>
+     </div> 
+ </div>
+</section>
+
+<!-- banner end -->
+
+
+
+<!-- details -->
+
+<section class="movie-details">
+    <strong>Pirates of the Caribbean: Salazar's Revenge</strong>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nam laborum cumque molestiae necessitatibus aliquam eligendi labore accusantium maiores quibusdam autem, corporis voluptatum. Minus qui, laboriosam vitae accusamus praesentium quod!</p>
+</section>
+
+
+<!-- screenshots -->
+<section class="screenshots">
+    <strong>ScreenShots</strong>
+    <!-- screenshots container -->
+    <div class="screen-s-container">
+        <img src="screenshot-1.jpg" alt="">
+        <img src="screenshot-2.jpg" alt="">
+        <img src="screenshot-3.jpg" alt="">
+        <img src="screenshot-4.jpg" alt="">
+    </div>
+</section>
+
+<!-- download -->
+<section class="download-movie">
+<!-- container -->
+<div class="download-container">
+    <!-- boxx -->
+    <div class="download-box">
+        <span><i class=" fas fa-server"></i>Server 1</span>
+        <span>English</span>
+        <span>480p</span>
+        <a href="Movie.mkv" download>Download</a>
+    </div>
+     <!-- boxx -->
+     <div class="download-box">
+        <span><i class=" fas fa-server"></i>Server 2</span>
+        <span>English</span>
+        <span>720p</span>
+        <a href="#">Download</a>
+    </div>
+     <!-- boxx -->
+     <div class="download-box">
+        <span><i class=" fas fa-server"></i>Server 3</span>
+        <span>English</span>
+        <span>1080p</span>
+        <a href="#">Download</a>
+    </div>
+</div>
+
+</section>
+
+<!-- footer -->
+<footer>
+    <!-- footer-logo -->
+    <a href="index.html" class="logo">
+        Movies <span>hd</span>
+    </a>
+    <!-- copyright -->
+    <span class="copyright">
+        Copyright 2023 
+    </span>
+</footer>
+
+
+
+
+<!-- jquery -->
+<script src="jQuery.js"></script>
+        
+  <script>
+    // progress bar
+
+    let scrollPercentage = () =>{
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round(pos *100 / calcHeight);
+        scrollProgress.style.background =`conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+    }
+window.onscroll = scrollPercentage;
+window.onload = scrollPercentage;
+
+
+    // --menu btn fixed when scroll
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 20){
+            $('.navigation').addClass('fix-icon')
+        }
+        else{
+            $('.navigation').removeClass('fix-icon')
+        }
+    });
+
+    // popup open
+    $(document).on('click','.play-btn a',function(){
+        $('.play').addClass('active-popup');
+    });
+
+    // popup close
+    $(document).on('click','.close-movie',function(){
+        $('.play').removeClass('active-popup');
+    });
+
+// auto play on popup
+    $('.play-btn a').click(function(){
+        $('#m-video')[0].play();
+    });
+// close video when pop up close
+$('.close-movie').click(function(){
+        $('#m-video')[0].pause();
+    });
+</script>
+
+</body>
+</html>
